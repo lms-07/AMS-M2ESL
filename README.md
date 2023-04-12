@@ -20,7 +20,7 @@ This repository is the official implementation of our paper:
 
 |                   AMS-M2ESL Framwork
 | :-----------------------------------------: |
-| <img src="./src/framework.pdf"  >  |
+| <img src="./src/framework.p"  >  |
 
 ## Environment
 - The software environment is Ubuntu 18.04.5 LTS 64 bit.
