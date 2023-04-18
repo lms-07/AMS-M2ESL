@@ -34,7 +34,7 @@ This repository is the official implementation of our paper:
 Three representative HSI data sets are adopted in our experiments, i.e., Indian Pines (IP), University of Pavia (UP), and University of Houston 13 (UH).
 The first two data sets could be access through [link1](http://www.ehu.eus/ccwintco/index.php?title=Hyperspectral_Remote_Sensing_Scenes##anomaly_detection),
 and the UH data set through [link2](https://hyperspectral.ee.uh.edu/?page_id=459).
-Our project is organized as follows:
+Our project is organized as follows:==our unofficial PyTorch implementation==
 
 ```text
 CVSSN
