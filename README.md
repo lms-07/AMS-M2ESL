@@ -20,7 +20,8 @@ This repository is the official implementation of our paper:
 ## Contents
 1. [Brief Introduction](#Brief-Introduction)
 1. [Environment](#Environment)
-1. [Data Sets](#Data-Sets)
+1. [Datasets and File Hierarchy](#Datasets-and-File-Hierarchy)
+1. [Implementations of Compared Methods](#Implementations-of-Compared-Methods)
 1. [Citation](#Citation)
 1. [License and Acknowledgement](License-and-Acknowledgement)
 
