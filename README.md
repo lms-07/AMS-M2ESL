@@ -1,3 +1,12 @@
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/adaptive-mask-sampling-and-manifold-to/hyperspectral-image-classification-on-casi)](https://paperswithcode.com/sota/hyperspectral-image-classification-on-casi?p=adaptive-mask-sampling-and-manifold-to)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/adaptive-mask-sampling-and-manifold-to/hyperspectral-image-classification-on-houston)](https://paperswithcode.com/sota/hyperspectral-image-classification-on-houston?p=adaptive-mask-sampling-and-manifold-to)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/adaptive-mask-sampling-and-manifold-to/hyperspectral-image-classification-on-indian)](https://paperswithcode.com/sota/hyperspectral-image-classification-on-indian?p=adaptive-mask-sampling-and-manifold-to)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/adaptive-mask-sampling-and-manifold-to/hyperspectral-image-classification-on-pavia)](https://paperswithcode.com/sota/hyperspectral-image-classification-on-pavia?p=adaptive-mask-sampling-and-manifold-to)
+
 # Adaptive Mask Sampling and Manifold to Euclidean Subspace Learning with Distance Covariance Representation for Hyperspectral Image Classification
 
 [Mingsong Li](https://orcid.org/0000-0001-6133-3923), [Wei Li](https://fdss.bit.edu.cn/yjdw/js/b153191.htm), Yikun Liu, [Yuwen Huang](https://jsj.hezeu.edu.cn/info/1302/6525.htm), and [Gongping Yang](https://faculty.sdu.edu.cn/gpyang)
@@ -18,7 +27,7 @@ This repository is the official implementation of our paper:
 ## Brief Introduction
 > <p align="left">For the abundant spectral and spatial information recorded in hyperspectral images (HSIs), fully exploring spectral-spatial relationships has attracted widespread attention in hyperspectral image classification (HSIC) community. However, there are still some intractable obstructs. For one thing, in the patch-based processing pattern, some spatial neighbor pixels are often inconsistent with the central pixel in land-cover class. For another thing, linear and nonlinear correlations between different spectral bands are vital yet tough for representing and excavating. To overcome these mentioned issues, an adaptive mask sampling and manifold to Euclidean subspace learning (AMS-M2ESL) framework is proposed for HSIC. Specifically, an adaptive mask based intra-patch sampling (AMIPS) module is firstly formulated for intra-patch sampling in an adaptive mask manner based on central spectral vector oriented spatial relationships. Subsequently, based on distance covariance  descriptor, a dual channel distance covariance representation (DC-DCR) module is proposed for modeling unified spectral-spatial feature representations and exploring spectral-spatial relationships, especially linear and nonlinear interdependence in spectral domain. Furthermore, considering that distance covariance matrix lies on the symmetric positive definite (SPD) manifold, we implement a manifold to Euclidean subspace learning (M2ESL) module respecting Riemannian geometry of SPD manifold for high-level spectral-spatial feature learning. Additionally, we introduce an approximate matrix square-root (ASQRT) layer for efficient Euclidean subspace projection. Extensive experimental results on three popular HSI data sets with limited training samples demonstrate the superior performance of the proposed method compared with other state-of-the-art methods. The source code is available at https://github.com/lms-07/AMS-M2ESL.</p>
 
-|                   AMS-M2ESL Framwork
+|               AMS-M2ESL Framwork
 | :-----------------------------------------: |
 | <img src="./src/framework.png"  >  |
 
@@ -29,7 +38,7 @@ This repository is the official implementation of our paper:
 - The py+torch combination may not limietd by our adopted one.
 
 
-## Data Sets
+## Datasets and File Hierarchy
 
 Three representative HSI data sets are adopted in our experiments, i.e., Indian Pines (IP), University of Pavia (UP), and University of Houston 13 (UH).
 The first two data sets could be access through [link1](http://www.ehu.eus/ccwintco/index.php?title=Hyperspectral_Remote_Sensing_Scenes##anomaly_detection),
@@ -37,8 +46,12 @@ and the UH data set through [link2](https://hyperspectral.ee.uh.edu/?page_id=459
 Our project is organized as follows:
 
 ```text
-CVSSN
-|-- process_cls_xxx         // main files 
+AMS-M2ESL
+|-- process_xxx     // main files 1) dl for the proposed model 2) cls_c_model 
+|                      for the classic compared model, SVM 3) dl_c_model for eight 
+|                      dl based compared methods 4) disjoint for the 
+|                      disjoint dataset (UH) 5) m_scale for the multiscale model, MCM-CNN
+|-- c_model         // eight deep learning based compared methods
 |-- data                    
 |   |-- IP
 |   |   |-- Indian_pines_corrected.mat
@@ -50,14 +63,26 @@ CVSSN
 |   |   |--Houston13_data.mat
 |   |   |--Houston13_gt_train.mat
 |   |   |--Houston13_gt_test.mat
-|-- model                   // the compared methodes and our proposed method
+|-- model           // the proposed method
 |-- output
-|   |-- cls_maps            // classification map visualizations 
-|   |-- results             // classification result files
-|-- src                     // source files
-|-- utils                   // data loading, processing, and evaluating
-|-- visual                  // cls maps visual
+|   |-- cls_maps    // classification map visualizations 
+|   |-- results     // classification result files
+|-- src             // source files
+|-- utils           // data loading, processing, and evaluating
+|-- visual          // cls maps visual
 ```
+## Implementations of Compared Methods
+For comparisons, our codebase also includes related compared methods.
+- SVM, PyTorch version, sklearn-based
+- J-Play, [Joint & Progressive Learning from High-Dimensional Data for Multi-Label Classification](https://openaccess.thecvf.com/content_ECCV_2018/html/Danfeng_Hong_Joint__Progressive_ECCV_2018_paper.html) ECCV 2018, referring to official Matlab version, https://github.com/danfenghong/ECCV2018_J-Play
+- 1D-CNN, [Deep Convolutional Neural Networks for Hyperspectral Image Classification](https://www.hindawi.com/journals/js/2015/258619/) Journal of Sensors 2015, from a HSIC Tool Codebase, https://github.com/eecn/Hyperspectral-Classification
+- MCM-CNN, [Feature Extraction With Multiscale Covariance Maps for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/8439081?arnumber=8439081) TGRS 2018, ***our unofficial PyTorch implementation*** based on offical Matlab version, https://github.com/henanjun/demo_MCMs
+- SSTN, [Spectral-Spatial Transformer Network for Hyperspectral Image Classification: A Factorized Architecture Search Framework](https://ieeexplore.ieee.org/document/9565208?arnumber=9565208) TGRS 2021, from offical PyTorch version, https://github.com/zilongzhong/SSTN/blob/main/NetworksBlocks.py 
+- SSSAN, [Spectral–Spatial Self-Attention Networks for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/9508777?arnumber=9508777) TGRS 2021, ***our unofficial PyTorch implementation*** based on the part of source Keras code from the author Dr. Xuming Zhang
+- SSAtt, [Hyperspectral Image Classification With Attention-Aided CNNs](https://ieeexplore.ieee.org/abstract/document/9142417) TGRS 2020, from a PyTorch implementation, https://github.com/weecology/DeepTreeAttention/blob/main/src/models/Hang2020.py
+- A2S2K-ResNet, [Attention-Based Adaptive Spectral-Spatial Kernel ResNet for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/9306920/authors#authors) TGRS 2020, from offical PyTorch version, https://github.com/suvojit-0x55aa/A2S2K-ResNet/blob/master/A2S2KResNet/A2S2KResNet.py
+- SSFTT, [Spectral–Spatial Feature Tokenization Transformer for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/9684381?arnumber=9684381) TGRS 2022, from offical PyTorch version, https://github.com/zgr6010/HSI_SSFTT/blob/main/cls_SSFTT_IP/SSFTTnet.py
+- ASPN, [Attention-Based Second-Order Pooling Network for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/8439081?arnumber=8439081) TGRS 2021, ***our unofficial PyTorch implementation*** based on offical Keras version, https://github.com/mengxue-rs/a-spn
 
 ## Citation
 
@@ -82,12 +107,17 @@ BibTex entry:
 If you have any problem, please do not hesitate to contact us `msli@mail.sdu.edu.cn`.
 
 ## License and Acknowledgement
-This project is released under [GPLv3](http://www.gnu.org/licenses/) license.
 
+- This project is released under [GPLv3](http://www.gnu.org/licenses/) license.
 - We would like to thank the Hyperspectral Image Analysis group and the NSF Funded Center for
   Airborne Laser Mapping (NCALM) at the University of Houston for providing the UH data set used in this work.
-- Part of our HSIC framework is referred to [HybridSN](https://github.com/gokriznastic/HybridSN), [A2S2K-ResNet](https://github.com/suvojit-0x55aa/A2S2K-ResNet), and [CNN_Enhanced_GCN](https://github.com/qichaoliu/CNN_Enhanced_GCN). Please also follow their licenses. Thanks for their awesome works.
-- Among the adopted compared methods, we also would like to thank Assistant Professor [Xiangtao Zheng](https://xiangtaozheng.github.io/) and
-  Dr. Xuming Zhang for providing the source tensorflow code of [SSAN](https://ieeexplore.ieee.org/document/8909379) and
-  the part of source keras code of [SSSAN](https://ieeexplore.ieee.org/document/9508777?arnumber=9508777), respectively.
+- Our HSIC framework is implemented based on our prior work [CVSSN](https://github.com/lms-07/CVSSN).
+- Our proposed AMS-M2ESL framework is inspired the following awesome works:
+  - [Brownian distance covariance](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-3/issue-4/Brownian-distance-covariance/10.1214/09-AOAS312.full), Ann. Appl. Stat. 2009
+  - [Joint Distribution Matters: Deep Brownian Distance Covariance for Few-Shot Classification](https://openaccess.thecvf.com/content/CVPR2022/html/Xie_Joint_Distribution_Matters_Deep_Brownian_Distance_Covariance_for_Few-Shot_Classification_CVPR_2022_paper.html), CVPR 2022
+  - [Superpixel-Based Brownian Descriptor for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/9645390?arnumber=9645390), TGRS 2021
+  - [A Riemannian Network for SPD Matrix Learning](https://ojs.aaai.org/index.php/AAAI/article/view/10866), AAAI 2017
+  - [Riemannian batch normalization for SPD neural networks](https://proceedings.neurips.cc/paper/2019/hash/6e69ebbfad976d4637bb4b39de261bf7-Abstract.html), NeurIPS 2019
+  - [Towards Faster Training of Global Covariance Pooling Networks by Iterative Matrix Square Root Normalization](https://openaccess.thecvf.com/content_cvpr_2018/html/Li_Towards_Faster_Training_CVPR_2018_paper.html), CVPR 2018
+  - [COSONet: Compact Second-Order Network for Video Face Recognition](https://link.springer.com/chapter/10.1007/978-3-030-20893-6_4), ACCV 2018
   
