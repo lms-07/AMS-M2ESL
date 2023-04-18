@@ -31,9 +31,6 @@ This repository is the official implementation of our paper:
 <center> AMS-M2ESL Framework  </center>
 ![framework](src/framework.png)
 
-
-
-
 ## Environment
 - The software environment is Ubuntu 18.04.5 LTS 64 bit.
 - This project is running on a single Nvidia GeForce RTX 3090 GPU based on Cuda 11.0.
