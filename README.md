@@ -113,7 +113,7 @@ If you have any problem, please do not hesitate to contact us `msli@mail.sdu.edu
 - We would like to thank the Hyperspectral Image Analysis group and the NSF Funded Center for
   Airborne Laser Mapping (NCALM) at the University of Houston for providing the UH dataset used in this work.
 - Our HSIC framework is implemented based on our prior work [CVSSN](https://github.com/lms-07/CVSSN).
-- Our proposed AMS-M2ESL framework is inspired the following awesome works:
+- Our proposed AMS-M2ESL framework is inspired by the following awesome works:
   - [Brownian distance covariance](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-3/issue-4/Brownian-distance-covariance/10.1214/09-AOAS312.full), Ann. Appl. Stat. 2009
   - [Joint Distribution Matters: Deep Brownian Distance Covariance for Few-Shot Classification](https://openaccess.thecvf.com/content/CVPR2022/html/Xie_Joint_Distribution_Matters_Deep_Brownian_Distance_Covariance_for_Few-Shot_Classification_CVPR_2022_paper.html), CVPR 2022
   - [Superpixel-Based Brownian Descriptor for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/9645390?arnumber=9645390), TGRS 2021
