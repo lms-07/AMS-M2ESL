@@ -9,7 +9,7 @@
 
 # Adaptive Mask Sampling and Manifold to Euclidean Subspace Learning with Distance Covariance Representation for Hyperspectral Image Classification
 
-[Mingsong Li](https://orcid.org/0000-0001-6133-3923), [Wei Li](https://fdss.bit.edu.cn/yjdw/js/b153191.htm), Yikun Liu, [Yuwen Huang](https://jsj.hezeu.edu.cn/info/1302/6525.htm), and [Gongping Yang](https://faculty.sdu.edu.cn/gpyang)
+[Mingsong Li](https://lms-07.github.io/), [Wei Li](https://fdss.bit.edu.cn/yjdw/js/b153191.htm), Yikun Liu, [Yuwen Huang](https://jsj.hezeu.edu.cn/info/1302/6525.htm), and [Gongping Yang](https://faculty.sdu.edu.cn/gpyang)
 
 [Time Lab](https://time.sdu.edu.cn/), [SDU](https://www.sdu.edu.cn/) ; [BIT](https://www.bit.edu.cn/)
 
