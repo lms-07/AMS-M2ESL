@@ -1,11 +1,12 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/adaptive-mask-sampling-and-manifold-to/hyperspectral-image-classification-on-indian)](https://paperswithcode.com/sota/hyperspectral-image-classification-on-indian?p=adaptive-mask-sampling-and-manifold-to)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/adaptive-mask-sampling-and-manifold-to/hyperspectral-image-classification-on-pavia)](https://paperswithcode.com/sota/hyperspectral-image-classification-on-pavia?p=adaptive-mask-sampling-and-manifold-to)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/adaptive-mask-sampling-and-manifold-to/hyperspectral-image-classification-on-casi)](https://paperswithcode.com/sota/hyperspectral-image-classification-on-casi?p=adaptive-mask-sampling-and-manifold-to)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/adaptive-mask-sampling-and-manifold-to/hyperspectral-image-classification-on-houston)](https://paperswithcode.com/sota/hyperspectral-image-classification-on-houston?p=adaptive-mask-sampling-and-manifold-to)
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/adaptive-mask-sampling-and-manifold-to/hyperspectral-image-classification-on-indian)](https://paperswithcode.com/sota/hyperspectral-image-classification-on-indian?p=adaptive-mask-sampling-and-manifold-to)
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/adaptive-mask-sampling-and-manifold-to/hyperspectral-image-classification-on-pavia)](https://paperswithcode.com/sota/hyperspectral-image-classification-on-pavia?p=adaptive-mask-sampling-and-manifold-to)
 
 # Adaptive Mask Sampling and Manifold to Euclidean Subspace Learning with Distance Covariance Representation for Hyperspectral Image Classification
 
