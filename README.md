@@ -37,7 +37,7 @@ This repository is the official implementation of our paper:
 - The software environment is Ubuntu 18.04.5 LTS 64 bit.
 - This project is running on a single Nvidia GeForce RTX 3090 GPU based on Cuda 11.0.
 - We adopt Python 3.8.5, PyTorch 1.10.0+cu111.
-- The py+torch combination may not limited by our adopted one.
+- The py+torch combination may not be limited by our adopted one.
 
 
 ## Datasets and File Hierarchy
@@ -77,7 +77,7 @@ AMS-M2ESL
 For comparisons, our codebase also includes related compared methods.
 - SVM, PyTorch version, sklearn-based
 - J-Play, [Joint & Progressive Learning from High-Dimensional Data for Multi-Label Classification](https://openaccess.thecvf.com/content_ECCV_2018/html/Danfeng_Hong_Joint__Progressive_ECCV_2018_paper.html) ECCV 2018, referring to official Matlab version, https://github.com/danfenghong/ECCV2018_J-Play
-- 1D-CNN, [Deep Convolutional Neural Networks for Hyperspectral Image Classification](https://www.hindawi.com/journals/js/2015/258619/) Journal of Sensors 2015, from a HSIC Tool Codebase, https://github.com/eecn/Hyperspectral-Classification
+- 1D-CNN, [Deep Convolutional Neural Networks for Hyperspectral Image Classification](https://www.hindawi.com/journals/js/2015/258619/) Journal of Sensors 2015, from an HSIC Tool Codebase, https://github.com/eecn/Hyperspectral-Classification
 - MCM-CNN, [Feature Extraction With Multiscale Covariance Maps for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/9565208) TGRS 2018, ***our unofficial PyTorch implementation*** based on official Matlab version, https://github.com/henanjun/demo_MCMs
 - SSTN, [Spectral-Spatial Transformer Network for Hyperspectral Image Classification: A Factorized Architecture Search Framework](https://ieeexplore.ieee.org/document/9565208) TGRS 2021, from official PyTorch version, https://github.com/zilongzhong/SSTN/blob/main/NetworksBlocks.py
 - SSSAN, [Spectral–Spatial Self-Attention Networks for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/9508777) TGRS 2021, ***our unofficial PyTorch implementation*** based on the part of source Keras code from the author Dr. Xuming Zhang
