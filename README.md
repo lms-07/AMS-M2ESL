@@ -37,13 +37,13 @@ This repository is the official implementation of our paper:
 - The software environment is Ubuntu 18.04.5 LTS 64 bit.
 - This project is running on a single Nvidia GeForce RTX 3090 GPU based on Cuda 11.0.
 - We adopt Python 3.8.5, PyTorch 1.10.0+cu111.
-- The py+torch combination may not limietd by our adopted one.
+- The py+torch combination may not limited by our adopted one.
 
 
 ## Datasets and File Hierarchy
 
 Three representative HSI datasets are adopted in our experiments, i.e., Indian Pines (IP), University of Pavia (UP), and University of Houston 13 (UH).
-The first two datasets could be access through [link1](http://www.ehu.eus/ccwintco/index.php?title=Hyperspectral_Remote_Sensing_Scenes##anomaly_detection),
+The first two datasets could be accessed through [link1](http://www.ehu.eus/ccwintco/index.php?title=Hyperspectral_Remote_Sensing_Scenes##anomaly_detection),
 and the UH dataset through [link2](https://hyperspectral.ee.uh.edu/?page_id=459).
 Our project is organized as follows:
 
@@ -114,7 +114,7 @@ If you have any problem, please do not hesitate to contact us `msli@mail.sdu.edu
 - We would like to thank the Hyperspectral Image Analysis group and the NSF Funded Center for
   Airborne Laser Mapping (NCALM) at the University of Houston for providing the UH dataset used in this work.
 - Our HSIC framework is implemented based on our prior work [CVSSN](https://github.com/lms-07/CVSSN).
-- Our proposed AMS-M2ESL framework is inspired the following awesome works:
+- Our proposed AMS-M2ESL framework is inspired by the following awesome works:
   - [Brownian distance covariance](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-3/issue-4/Brownian-distance-covariance/10.1214/09-AOAS312.full), Ann. Appl. Stat. 2009
   - [Joint Distribution Matters: Deep Brownian Distance Covariance for Few-Shot Classification](https://openaccess.thecvf.com/content/CVPR2022/html/Xie_Joint_Distribution_Matters_Deep_Brownian_Distance_Covariance_for_Few-Shot_Classification_CVPR_2022_paper.html), CVPR 2022
   - [Superpixel-Based Brownian Descriptor for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/9645390?arnumber=9645390), TGRS 2021
