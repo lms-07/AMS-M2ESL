@@ -8,7 +8,7 @@
 
 
 
-# Adaptive Mask Sampling and Manifold to Euclidean Subspace Learning with Distance Covariance Representation for Hyperspectral Image Classification
+# [TGRS 2023] Adaptive Mask Sampling and Manifold to Euclidean Subspace Learning with Distance Covariance Representation for Hyperspectral Image Classification
 
 [Mingsong Li](https://lms-07.github.io/), [Wei Li](https://fdss.bit.edu.cn/yjdw/js/b153191.htm), Yikun Liu, [Yuwen Huang](https://jsj.hezeu.edu.cn/info/1302/6525.htm), and [Gongping Yang](https://faculty.sdu.edu.cn/gpyang)
 
@@ -90,7 +90,7 @@ For comparisons, our codebase also includes related compared methods.
 
 Please kindly cite our work if this work is helpful for your research.
 
-[1] M. Li, W. Li, Y. Liu, Y. Huang and G. Yang, "Adaptive Mask Sampling and Manifold to Euclidean Subspace Learning with Distance Covariance Representation for Hyperspectral Image Classification," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2023.3265388.
+[1] M. Li, W. Li, Y. Liu, Y. Huang and G. Yang, "Adaptive Mask Sampling and Manifold to Euclidean Subspace Learning With Distance Covariance Representation for Hyperspectral Image Classification," in IEEE Transactions on Geoscience and Remote Sensing, vol. 61, pp. 1-18, 2023, Art no. 5508518.
 
 BibTex entry:
 ```text
@@ -99,7 +99,9 @@ BibTex entry:
   author={Li, Mingsong and Li, Wei and Liu, Yikun and Huang, Yuwen and Yang, Gongping},
   journal={IEEE Transactions on Geoscience and Remote Sensing},
   year={2023},
-  doi={10.1109/TGRS.2023.3265388},
+  volume={61},
+  number={},
+  pages={1-18},
   publisher={IEEE},
 }
 ```
